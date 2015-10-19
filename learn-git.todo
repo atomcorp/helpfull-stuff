@@ -1,0 +1,28 @@
+https://www.atlassian.com/git/tutorials/
+
+git init // create repo (or eg. git init C:\user\my-new-folder)
+
+git clone <repo>  // copy existing repo
+
+git add <file>  // stage new file
+
+- git add -A // add all
+
+(git add . // ON FIRST ADD ONLY add all)
+
+- git commit -m "<message>" (-m flag allows message )
+
+- git pull <remote> // grab latest changes
+// <remote> = sometimes (origin master), could be other branches
+
+- PUSH BEFORE YOU PULL
+
+git remote add origin <repo url> // add local repo to remote 
+- git push -u origin --all # pushes up the repo and its refs for the first time
+    the --all flag tells git that you want to push all your branches, usually it'd push only your current branch.
+    the -u flag sets the upstream tracking reference, thus you won't need to specify origin for future git push and git pull commands, making things easier.
+
+git push -u origin --tags # pushes up any tags
+
+//
+git log --pretty=oneline // one line history of past commits
