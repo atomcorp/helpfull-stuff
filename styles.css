@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'Sailec';
+  src: url('../fonts/Sailec-3044DE_A_0.woff2?1460061043') format('woff2'),
+       url('../fonts/Sailec-3044DE_A_0.woff?1460061043') format('woff');
+       font-weight: 400;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Sailec';
+  src: url('../fonts/Sailec-3044DE_B_0.woff2?1460056269') format('woff2'),
+       url('../fonts/Sailec-3044DE_B_0.woff?1460056269') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Sailec';
+  src: url('../fonts/Sailec-3044DE_0_0.woff2?1460061043') format('woff2'),
+       url('../fonts/Sailec-3044DE_0_0.woff?1460061043') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sailec';
+  src: url('../fonts/Sailec-3044DE_4_0.woff2?1460056269') format('woff2'),
+       url('../fonts/Sailec-3044DE_4_0.woff?1460056269') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* Base */
+
+html {
+  background-color: transparent;
+}
+
+body {
+  background: rgba(92, 92, 92, 1) !important;
+}
+
+table.body {
+  background: transparent !important;
+  background: rgba(92, 92, 92, 1) !important;
+}
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td, th, a {
+  font-family: 'Sailec', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body, table.body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Typography */
+
+body, table.body, p, td, th, a {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6875;
+  color: rgba(33, 33, 33, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgba(33, 33, 33, 1);
+}
+
+h1, h2, h3, h4, h5, h6, b {
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 19px;
+}
+
+p {
+  margin: 0 0 25px 0 !important;
+}
+
+img {
+  width: unset;
+}
+
+a,
+a:visited {
+  text-decoration: underline;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 10px 20px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: rgba(151, 113, 36, 1);
+  border-radius: 4px;
+}
+
+.btn,
+.btn:visited,
+.btn:hover,
+.btn:focus {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+
+/* Separator */
+
+.separator-hr {
+  margin: 9px 16px 9px;
+  border-top: 1px solid rgba(151, 113, 36, .50);
+}
+
+@media only screen and (max-width: 596px) {
+  .separator-hr {
+    margin: 0 16px;
+  }
+}
+
+
+/* Header */
+
+.header {
+  margin: 25px 9px 0;
+}
+
+@media only screen and (max-width: 596px) {
+  .header {
+    margin: 16px 0 0;
+  }
+}
+
+/* Footer */
+
+.footer {
+  margin: 0 9px;
+  padding-bottom: 9px;
+}
+
+.footer p,
+.footer a {
+  font-size: 13px;
+  color: rgb(124, 124, 124);
+}
+
+.footer p {
+  margin-bottom: 0!important;
+}
+
+.footer__social {
+  width: unset!important;
+  text-align: right;
+}
+
+.footer__social__icon {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.footer__social__icon img {
+  height: 20px !important;
+}
+
+.footer__legal {
+  width: unset!important;
+}
+
+.footer__legal__link {
+  margin-right: 15px;
+}
+
+
+@media only screen and (max-width: 596px) {
+  .footer {
+    margin: 0;
+  }
+
+  .footer__inner {
+    padding-top: 16px;
+  }
+
+  .footer__social {
+    text-align: left;
+  }
+
+  .footer__social__icon {
+    margin-right: 15px;
+    margin-left: 0;
+  }
+}
+
+
+/* Content */
+
+.content a,
+.content a:visited,
+.content a:hover,
+.content a:focus {
+  color: rgba(151, 113, 36, 1);
+}
+
+.content__section {
+  margin-right: 9px;
+  margin-left: 9px;
+}
+
+@media only screen and (max-width: 596px) {
+  .content__section {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
